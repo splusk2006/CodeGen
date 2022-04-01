@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+    <title>Random Code Generator</title>
+</head>
+<body style="align-items: center;">
+    <h3>중복없는 코드번호 생성기</h3>
+    <hr>
+    <p>난수 개수 [최소 1, 최대 100,000] <input id="count" type="number" min="1" max="100000" value="16100"></input></p>
+    <p>코드 길이 [최소 1, 최대 32] <input id="codeLen" type="number" min="1" max="32" value="12"></input></p>
+    
+    <p><label><input name="checks" type="checkbox" value="lowercase"> 알파벳 소문자 포함</label></p>
+    <p><label><input name="checks" type="checkbox" value="uppercase" checked> 알파벳 대문자 포함</label></p>
+    <p><label><input name="checks" type="checkbox" value="number" checked> 숫자 포함</label></p>
+    
+    <hr>
+    파일 이름 <input id="fileName" type="text" value="randomCode.txt"></input>
+    <button type="button", id="btn">생성</button>
+
+    <script src="FileSaver.js"></script>
+    <script src="app.js"></script>
+</body>
