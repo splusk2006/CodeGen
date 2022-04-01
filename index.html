@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <head>
+    <meta charset="utf-8">
     <title>Random Code Generator</title>
 </head>
 <body style="align-items: center;">
-    <h3>중복없는 코드번호 생성기</h3>
+    <h2>중복없는 코드번호 생성기</h2>
     
     <hr>
     <p>난수 개수 [최소 1, 최대 100,000] <input id="count" type="number" min="1" max="100000" value="16100"></input></p>
@@ -17,6 +18,6 @@
     파일 이름 <input id="fileName" type="text" value="randomCode.txt"></input>
     <button type="button", id="btn">생성</button>
 
-    <script src="FileSaver.js"></script>
-    <script src="app.js"></script>
+    <script src="src/FileSaver.js"></script>
+    <script src="src/app.js"></script>
 </body>
